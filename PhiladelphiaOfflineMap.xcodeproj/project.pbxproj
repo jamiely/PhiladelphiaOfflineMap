@@ -16,7 +16,44 @@
 		6D0C94A015F2D9300057E8FB /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C949E15F2D9300057E8FB /* MainStoryboard_iPhone.storyboard */; };
 		6D0C94A315F2D9300057E8FB /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C94A115F2D9300057E8FB /* MainStoryboard_iPad.storyboard */; };
 		6D0C94AE15F2D9830057E8FB /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C94AD15F2D9830057E8FB /* MapViewController.m */; };
+		6D0C94B015F2DB290057E8FB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C94AF15F2DB290057E8FB /* README.md */; };
+		6D0C94CA15F2DCAE0057E8FB /* libMapView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0C94C215F2DBF90057E8FB /* libMapView.a */; };
+		6D0C94CC15F2DD520057E8FB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0C94CB15F2DD520057E8FB /* libsqlite3.dylib */; };
+		6D0C94CE15F2DD5D0057E8FB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0C94CD15F2DD5D0057E8FB /* CoreLocation.framework */; };
+		6D0C94D015F2DD6F0057E8FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0C94CF15F2DD6F0057E8FB /* QuartzCore.framework */; };
+		6D0C94D315F2DDB20057E8FB /* Philadelphia.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C94D215F2DDB20057E8FB /* Philadelphia.mbtiles */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D0C94C115F2DBF90057E8FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D0C94B115F2DBF90057E8FB /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17F31EFA1331050A00122B16;
+			remoteInfo = MapView;
+		};
+		6D0C94C315F2DBF90057E8FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D0C94B115F2DBF90057E8FB /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17157D87133BBC8300E28941;
+			remoteInfo = MapViewTests;
+		};
+		6D0C94C515F2DBF90057E8FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D0C94B115F2DBF90057E8FB /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2BF3078F0F8AC5C0007014EE;
+			remoteInfo = "Unit Tests";
+		};
+		6D0C94C815F2DC9F0057E8FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D0C94B115F2DBF90057E8FB /* MapView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C974130E8A19B2007D16AD;
+			remoteInfo = MapView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6D0C948815F2D9300057E8FB /* PhiladelphiaOfflineMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhiladelphiaOfflineMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +70,12 @@
 		6D0C94A215F2D9300057E8FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		6D0C94AC15F2D9830057E8FB /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		6D0C94AD15F2D9830057E8FB /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		6D0C94AF15F2DB290057E8FB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		6D0C94B115F2DBF90057E8FB /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "vendor/route-me/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
+		6D0C94CB15F2DD520057E8FB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6D0C94CD15F2DD5D0057E8FB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6D0C94CF15F2DD6F0057E8FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6D0C94D215F2DDB20057E8FB /* Philadelphia.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = Philadelphia.mbtiles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0C94D015F2DD6F0057E8FB /* QuartzCore.framework in Frameworks */,
+				6D0C94CE15F2DD5D0057E8FB /* CoreLocation.framework in Frameworks */,
+				6D0C94CC15F2DD520057E8FB /* libsqlite3.dylib in Frameworks */,
+				6D0C94CA15F2DCAE0057E8FB /* libMapView.a in Frameworks */,
 				6D0C948D15F2D9300057E8FB /* UIKit.framework in Frameworks */,
 				6D0C948F15F2D9300057E8FB /* Foundation.framework in Frameworks */,
 				6D0C949115F2D9300057E8FB /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +99,9 @@
 		6D0C947D15F2D9300057E8FB = {
 			isa = PBXGroup;
 			children = (
+				6D0C94D115F2DDB20057E8FB /* Assets */,
+				6D0C94B115F2DBF90057E8FB /* MapView.xcodeproj */,
+				6D0C94AF15F2DB290057E8FB /* README.md */,
 				6D0C949215F2D9300057E8FB /* PhiladelphiaOfflineMap */,
 				6D0C948B15F2D9300057E8FB /* Frameworks */,
 				6D0C948915F2D9300057E8FB /* Products */,
@@ -69,6 +119,9 @@
 		6D0C948B15F2D9300057E8FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D0C94CF15F2DD6F0057E8FB /* QuartzCore.framework */,
+				6D0C94CD15F2DD5D0057E8FB /* CoreLocation.framework */,
+				6D0C94CB15F2DD520057E8FB /* libsqlite3.dylib */,
 				6D0C948C15F2D9300057E8FB /* UIKit.framework */,
 				6D0C948E15F2D9300057E8FB /* Foundation.framework */,
 				6D0C949015F2D9300057E8FB /* CoreGraphics.framework */,
@@ -101,6 +154,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6D0C94B215F2DBF90057E8FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C94C215F2DBF90057E8FB /* libMapView.a */,
+				6D0C94C415F2DBF90057E8FB /* MapViewTests.octest */,
+				6D0C94C615F2DBF90057E8FB /* RM Unit Tests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D0C94D115F2DDB20057E8FB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C94D215F2DDB20057E8FB /* Philadelphia.mbtiles */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +186,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6D0C94C915F2DC9F0057E8FB /* PBXTargetDependency */,
 			);
 			name = PhiladelphiaOfflineMap;
 			productName = PhiladelphiaOfflineMap;
@@ -140,12 +212,42 @@
 			mainGroup = 6D0C947D15F2D9300057E8FB;
 			productRefGroup = 6D0C948915F2D9300057E8FB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6D0C94B215F2DBF90057E8FB /* Products */;
+					ProjectRef = 6D0C94B115F2DBF90057E8FB /* MapView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6D0C948715F2D9300057E8FB /* PhiladelphiaOfflineMap */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6D0C94C215F2DBF90057E8FB /* libMapView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMapView.a;
+			remoteRef = 6D0C94C115F2DBF90057E8FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D0C94C415F2DBF90057E8FB /* MapViewTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MapViewTests.octest;
+			remoteRef = 6D0C94C315F2DBF90057E8FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6D0C94C615F2DBF90057E8FB /* RM Unit Tests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "RM Unit Tests.app";
+			remoteRef = 6D0C94C515F2DBF90057E8FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6D0C948615F2D9300057E8FB /* Resources */ = {
@@ -155,6 +257,8 @@
 				6D0C949715F2D9300057E8FB /* InfoPlist.strings in Resources */,
 				6D0C94A015F2D9300057E8FB /* MainStoryboard_iPhone.storyboard in Resources */,
 				6D0C94A315F2D9300057E8FB /* MainStoryboard_iPad.storyboard in Resources */,
+				6D0C94B015F2DB290057E8FB /* README.md in Resources */,
+				6D0C94D315F2DDB20057E8FB /* Philadelphia.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +276,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D0C94C915F2DC9F0057E8FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapView;
+			targetProxy = 6D0C94C815F2DC9F0057E8FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6D0C949515F2D9300057E8FB /* InfoPlist.strings */ = {
@@ -257,7 +369,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhiladelphiaOfflineMap/PhiladelphiaOfflineMap-Prefix.pch";
+				HEADER_SEARCH_PATHS = "vendor/route-me/MapView/Map/**";
 				INFOPLIST_FILE = "PhiladelphiaOfflineMap/PhiladelphiaOfflineMap-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -268,7 +385,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhiladelphiaOfflineMap/PhiladelphiaOfflineMap-Prefix.pch";
+				HEADER_SEARCH_PATHS = "vendor/route-me/MapView/Map/**";
 				INFOPLIST_FILE = "PhiladelphiaOfflineMap/PhiladelphiaOfflineMap-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
