@@ -7,6 +7,8 @@
 //
 
 #import "MapViewController.h"
+#import "RMMapView.h"
+#import "RMMBTilesTileSource.h"
 
 @interface MapViewController ()
 
@@ -14,10 +16,21 @@
 
 @implementation MapViewController
 
+@synthesize mapView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    mapView.contents.minZoom = 13.f;
+    mapView.contents.maxZoom = 15.f;
+    mapView.contents.zoom = 14.5;
+
+    NSURL *tileSetURL = [[NSBundle mainBundle]
+        URLForResource:@"Philadelphia"
+        withExtension:@"mbtiles"];
+    mapView.contents.tileSource = [[RMMBTilesTileSource alloc] initWithTileSetURL: tileSetURL];
+
+    [mapView.contents moveToLatLong: CLLocationCoordinate2DMake(39.949721,-75.150261)];
 }
 
 - (void)viewDidUnload

@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MapViewController : UIViewController
+@class RMMapView;
+
+@interface MapViewController : UIViewController {
+    IBOutlet RMMapView *mapView;
+}
+
+@property (nonatomic, strong) IBOutlet RMMapView *mapView;
 
 @end
