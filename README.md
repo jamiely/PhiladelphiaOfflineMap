@@ -7,3 +7,7 @@ See my blog article entitled [Generating offline maps for iOS applications](http
     git submodule init
     git submodule update
 
+# Attribution
+
+Map data © OpenStreetMap (and) contributors, CC-BY-SA
+
