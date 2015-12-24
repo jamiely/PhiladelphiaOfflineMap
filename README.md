@@ -1,6 +1,6 @@
 # Summary
 
-See my blog article entitled [Generating offline maps for iOS applications](http://jamie.ly/wordpress/programming/libraries/generating-off…s-applications/).
+See my blog article entitled [Generating offline maps for iOS applications](http://blog.jamie.ly/software/libraries/2012/09/04/generating-offline-maps-for-ios.html).
 
 # Usage
 
